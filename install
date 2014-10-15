@@ -15,7 +15,7 @@ for buildpack in ddollar/heroku-buildpack-multi \
   bacongobbler/heroku-buildpack-jekyll
 do
   "$PLUSHU_ROOT/lib/plushook" install-buildpack $(printf '%02i_%s' \
-    "$i" "${buildpack##*/})") "https://github.com/$buildpack.git"
+    "$i" "${buildpack##*/}") "https://github.com/$buildpack.git"
   i=$((i+1))
 done
 
