@@ -14,9 +14,7 @@ for buildpack in ddollar/heroku-buildpack-multi \
   rhy-jot/buildpack-nginx Kloadut/heroku-buildpack-static-apache \
   bacongobbler/heroku-buildpack-jekyll
 do
-  if [[ ! -d "$PLUSHU_PLUGINS_DIR/$plugin" ]]; then
-    "$PLUSHU_ROOT/lib/plushook" install-buildpack $(printf '%02i_%s'
-      $((i++)) ${buildpack##*/}) "https://github.com/$buildpack.git"
-  fi
+  "$PLUSHU_ROOT/lib/plushook" install-buildpack $(printf '%02i_%s'
+    $((i++)) ${buildpack##*/}) "https://github.com/$buildpack.git"
 done
 
