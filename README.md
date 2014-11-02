@@ -1,6 +1,6 @@
 # plushu-buildstep-buildpacks
 
-Installs the default set of buildpacks used by Buildstep.
+Installs the default set of buildpacks used on Heroku.
 
 ## Usage
 
@@ -8,5 +8,5 @@ Installs the default set of buildpacks used by Buildstep.
 # if you haven't already installed the buildpacks plugin
 plushu install buildpacks
 
-plushu install buildstep-buildpacks
+plushu install heroku-buildpacks
 ```
