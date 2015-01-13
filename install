@@ -6,7 +6,7 @@ if [[ -z "$PLUSHU_BUILDPACKS_DIR" ]]; then
   exit 1
 fi
 
-i=`ls -f "$PLUSHU_BUILDPACKS_DIR" | wc -l`
+i=`ls -U "$PLUSHU_BUILDPACKS_DIR" | wc -l`
 
 for n in ruby nodejs clojure python java gradle grails scala play php go; do
   "$PLUSHU_ROOT/lib/plushook" install-buildpack \
